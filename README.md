@@ -10,7 +10,7 @@
 
 ### Preview
 
-![Image1](https://github.com/chunmusic/Fifa21_Player_Data/blob/master/image/image1.png?raw=true)
+![Image1](https://raw.githubusercontent.com/chunmusic/Fifa21_Player_Data/master/images/image1.png)
 
-![Image2](https://github.com/chunmusic/Fifa21_Player_Data/blob/master/image/image2.png?raw=true)
+![Image2](https://raw.githubusercontent.com/chunmusic/Fifa21_Player_Data/master/images/image2.png)
 
