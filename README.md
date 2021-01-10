@@ -8,9 +8,14 @@
 
 - Please refer to the website https://chunzps-covid-dashboard.herokuapp.com/
 
-### Preview
+## Preview
+
+###1st Image
 
 ![Image1](https://raw.githubusercontent.com/chunmusic/Fifa21_Player_Data/master/images/image1.png)
+
+
+###2nd Image
 
 ![Image2](https://raw.githubusercontent.com/chunmusic/Fifa21_Player_Data/master/images/image2.png)
 
