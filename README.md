@@ -10,12 +10,12 @@
 
 ## Preview
 
-###1st Image
+### 1st Image
 
 ![Image1](https://raw.githubusercontent.com/chunmusic/Fifa21_Player_Data/master/images/image1.png)
 
 
-###2nd Image
+### 2nd Image
 
 ![Image2](https://raw.githubusercontent.com/chunmusic/Fifa21_Player_Data/master/images/image2.png)
 
