@@ -6,7 +6,7 @@
 
 - Dataset was provided by https://www.kaggle.com/justdhia/fifa-players
 
-- Please refer to the website https://chunzps-covid-dashboard.herokuapp.com/
+- Please refer to the website https://fifa21-player-data.herokuapp.com/
 
 ## Preview
 
