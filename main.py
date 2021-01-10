@@ -69,6 +69,10 @@ def select_player_1(col1,col2,sub_col2,sub_col3):
 
     sub_col1.markdown(f"<h1 style='text-align: center; color: black;font-size:30px'>{player_1_name}</h1>", unsafe_allow_html=True)
 
+    preferred_position_1 = df.loc[df['Name'] == player_1_name,'PreferredPositions'].iloc[0]
+    sub_col1.markdown(f"<h2 style='text-align: center; color: black;font-size:24px'>{preferred_position_1}</h2>", unsafe_allow_html=True)
+
+
     #Nationality
     player_1_nationality = df.loc[df['Name'] == player_1_name,'Natinality'].iloc[0]
     sub_col2.markdown(f"<h4 style='text-align: left; color: black;font-size:18px'>Nationality:</h4>", unsafe_allow_html=True)
@@ -110,9 +114,14 @@ def select_player_1(col1,col2,sub_col2,sub_col3):
     player_1_att = (df.loc[df['Name'] == player_1_name,'AttPosition'].iloc[0]+df.loc[df['Name'] == player_1_name,'Finishing'].iloc[0])/2
     player_1_spd = (df.loc[df['Name'] == player_1_name,'SprintSpeed'].iloc[0]+df.loc[df['Name'] == player_1_name,'Acceleration'].iloc[0])/2
     player_1_pow = df.loc[df['Name'] == player_1_name,'ShotPower'].iloc[0]
-    player_1_def = (df.loc[df['Name'] == player_1_name,'Marking'].iloc[0]+df.loc[df['Name'] == player_1_name,'SlideTackle'].iloc[0]+df.loc[df['Name'] == player_1_name,'StandTackle'].iloc[0])/3
     player_1_sta = df.loc[df['Name'] == player_1_name,'Stamina'].iloc[0]
     player_1_tec = (df.loc[df['Name'] == player_1_name,'BallControl'].iloc[0]+df.loc[df['Name'] == player_1_name,'Dribbling'].iloc[0])/2
+
+    if preferred_position_1 == "GK":
+        player_1_def = (df.loc[df['Name'] == player_1_name,'GKPositioning'].iloc[0]+df.loc[df['Name'] == player_1_name,'GKDiving'].iloc[0]+df.loc[df['Name'] == player_1_name,'GKHandling'].iloc[0]+df.loc[df['Name'] == player_1_name,'GKKicking'].iloc[0]+df.loc[df['Name'] == player_1_name,'GKReflexes'].iloc[0])/5
+    else:
+        player_1_def = (df.loc[df['Name'] == player_1_name,'Marking'].iloc[0]+df.loc[df['Name'] == player_1_name,'SlideTackle'].iloc[0]+df.loc[df['Name'] == player_1_name,'StandTackle'].iloc[0])/3
+
 
     return player_1_att,player_1_spd,player_1_pow,player_1_def,player_1_sta,player_1_tec
 
@@ -157,6 +166,9 @@ def select_player_2(col4,col3,sub_col4,sub_col5):
 
     sub_col6.markdown(f"<h1 style='text-align: center; color: black;font-size:30px'>{player_2_name}</h1>", unsafe_allow_html=True)
 
+    preferred_position_2 = df.loc[df['Name'] == player_2_name,'PreferredPositions'].iloc[0]
+    sub_col6.markdown(f"<h2 style='text-align: center; color: black;font-size:24px'>{preferred_position_2}</h2>", unsafe_allow_html=True)
+
 
     #Nationality
     player_2_nationality = df.loc[df['Name'] == player_2_name,'Natinality'].iloc[0]
@@ -199,9 +211,14 @@ def select_player_2(col4,col3,sub_col4,sub_col5):
     player_2_att = (df.loc[df['Name'] == player_2_name,'AttPosition'].iloc[0]+df.loc[df['Name'] == player_2_name,'Finishing'].iloc[0])/2
     player_2_spd = (df.loc[df['Name'] == player_2_name,'SprintSpeed'].iloc[0]+df.loc[df['Name'] == player_2_name,'Acceleration'].iloc[0])/2
     player_2_pow = df.loc[df['Name'] == player_2_name,'ShotPower'].iloc[0]
-    player_2_def = (df.loc[df['Name'] == player_2_name,'Marking'].iloc[0]+df.loc[df['Name'] == player_2_name,'SlideTackle'].iloc[0]+df.loc[df['Name'] == player_2_name,'StandTackle'].iloc[0])/3
     player_2_sta = df.loc[df['Name'] == player_2_name,'Stamina'].iloc[0]
     player_2_tec = (df.loc[df['Name'] == player_2_name,'BallControl'].iloc[0]+df.loc[df['Name'] == player_2_name,'Dribbling'].iloc[0])/2
+
+    if preferred_position_2 == "GK":
+        player_2_def = (df.loc[df['Name'] == player_2_name,'GKPositioning'].iloc[0]+df.loc[df['Name'] == player_2_name,'GKDiving'].iloc[0]+df.loc[df['Name'] == player_2_name,'GKHandling'].iloc[0]+df.loc[df['Name'] == player_2_name,'GKKicking'].iloc[0]+df.loc[df['Name'] == player_2_name,'GKReflexes'].iloc[0])/5
+    else:
+        player_2_def = (df.loc[df['Name'] == player_2_name,'Marking'].iloc[0]+df.loc[df['Name'] == player_2_name,'SlideTackle'].iloc[0]+df.loc[df['Name'] == player_2_name,'StandTackle'].iloc[0])/3
+
 
     return player_2_att,player_2_spd,player_2_pow,player_2_def,player_2_sta,player_2_tec
 
