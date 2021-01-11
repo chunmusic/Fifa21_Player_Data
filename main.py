@@ -56,7 +56,7 @@ def select_player_1(col1,col2,sub_col2,sub_col3):
                                                  "RC Strasbourg Alsace"),key="france_1")
 
     df = pd.read_csv("dataset/2021.csv")
-    df = df.loc[df['Club'] == club_name_1]
+    df = df.loc[df['Club'] == club_name_1].sort_values(by='Overal', ascending=False)
     player_1_df = df['Name']
 
     player_1_name = col1.selectbox("PLAYER",(list(player_1_df)),key="player_1")
@@ -154,7 +154,7 @@ def select_player_2(col4,col3,sub_col4,sub_col5):
                                                  "RC Strasbourg Alsace"),key="france_2")
 
     df = pd.read_csv("dataset/2021.csv")
-    df = df.loc[df['Club'] == club_name_2]
+    df = df.loc[df['Club'] == club_name_2].sort_values(by='Overal', ascending=False)
     player_2_df = df['Name']
 
     player_2_name = col4.selectbox("PLAYER",(list(player_2_df)),key="player_2")
