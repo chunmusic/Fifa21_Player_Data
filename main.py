@@ -278,3 +278,4 @@ if __name__ == "__main__":
 
     radar_chart(placeholder_1,placeholder_2,player_1_att,player_1_spd,player_1_pow,player_1_def,player_1_sta,player_1_tec,player_2_att,player_2_spd,player_2_pow,player_2_def,player_2_sta,player_2_tec)
 
+    st.write("Developed by ChunzPs")
