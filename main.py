@@ -9,10 +9,33 @@ from PIL import Image
 
 def init_ui():
 
-    st.set_page_config(page_title="FIFA Player",
-                    page_icon="🧊",
-                    layout="wide",
-                    initial_sidebar_state="expanded")
+    st.set_page_config(layout="wide")
+
+    hide_streamlit_style = """
+                <style>
+                #MainMenu {visibility: hidden;}
+                footer {visibility: hidden;}
+
+                .reportview-container .main .block-container{{
+                    max-width: {max_width}px;
+                    padding-top: {padding_top}rem;
+                    padding-right: {padding_right}rem;
+                    padding-left: {padding_left}rem;
+                    padding-bottom: {padding_bottom}rem;
+                }}
+                .reportview-container .main {{
+                    color: {COLOR};
+                    background-color: {BACKGROUND_COLOR};
+                }}
+
+                </style>
+                """
+    st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+
+    # st.set_page_config(page_title="FIFA Player",
+    #                 page_icon="🧊",
+    #                 layout="wide",
+    #                 initial_sidebar_state="expanded")
 
    
     st.markdown("<h1 style='text-align: center; color: black;font-size:72px'>FIFA 21 - Player Database</h1>", unsafe_allow_html=True)
@@ -269,7 +292,6 @@ def radar_chart(placeholder_1,placeholder_2,player_1_att,player_1_spd,player_1_p
 
 if __name__ == "__main__":
 
-
     col1,col2,col3,col4,sub_col1,sub_col2,sub_col3,sub_col4,sub_col5,sub_col6,placeholder_1,placeholder_2 = init_ui()
 
     player_1_att,player_1_spd,player_1_pow,player_1_def,player_1_sta,player_1_tec = select_player_1(col1,col2,sub_col2,sub_col3)
@@ -278,4 +300,9 @@ if __name__ == "__main__":
 
     radar_chart(placeholder_1,placeholder_2,player_1_att,player_1_spd,player_1_pow,player_1_def,player_1_sta,player_1_tec,player_2_att,player_2_spd,player_2_pow,player_2_def,player_2_sta,player_2_tec)
 
-    st.write("Developed by ChunzPs")
+    st.markdown("<h4 style='text-align: center; color: grey;font-size:72px'></h4>", unsafe_allow_html=True)
+    st.markdown("<h4 style='text-align: center; color: grey;font-size:72px'></h4>", unsafe_allow_html=True)
+    st.markdown("<h4 style='text-align: center; color: grey;font-size:72px'></h4>", unsafe_allow_html=True)
+    st.markdown("<h4 style='text-align: center; color: grey;font-size:72px'></h4>", unsafe_allow_html=True)
+    st.markdown("<h4 style='text-align: center; color: grey;font-size:12px'>Developed by ChunzPs</h4>", unsafe_allow_html=True)
+
