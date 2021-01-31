@@ -6,7 +6,7 @@
 
 - Dataset was provided by https://www.kaggle.com/justdhia/fifa-players
 
-- Please refer to the website https://fifa21-player-data.herokuapp.com/
+- Please refer to the website https://share.streamlit.io/chunmusic/fifa21_player_data/main.py
 
 ## Preview
 
