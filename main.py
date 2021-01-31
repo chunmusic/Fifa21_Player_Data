@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-
+import footer
 
 from PIL import Image
 
@@ -300,9 +300,10 @@ if __name__ == "__main__":
 
     radar_chart(placeholder_1,placeholder_2,player_1_att,player_1_spd,player_1_pow,player_1_def,player_1_sta,player_1_tec,player_2_att,player_2_spd,player_2_pow,player_2_def,player_2_sta,player_2_tec)
 
-    st.markdown("<h4 style='text-align: center; color: grey;font-size:72px'></h4>", unsafe_allow_html=True)
-    st.markdown("<h4 style='text-align: center; color: grey;font-size:72px'></h4>", unsafe_allow_html=True)
-    st.markdown("<h4 style='text-align: center; color: grey;font-size:72px'></h4>", unsafe_allow_html=True)
-    st.markdown("<h4 style='text-align: center; color: grey;font-size:72px'></h4>", unsafe_allow_html=True)
-    st.markdown("<h4 style='text-align: center; color: grey;font-size:12px'>Developed by ChunzPs</h4>", unsafe_allow_html=True)
+    # st.markdown("<h4 style='text-align: center; color: grey;font-size:72px'></h4>", unsafe_allow_html=True)
+    # st.markdown("<h4 style='text-align: center; color: grey;font-size:72px'></h4>", unsafe_allow_html=True)
+    # st.markdown("<h4 style='text-align: center; color: grey;font-size:72px'></h4>", unsafe_allow_html=True)
+    # st.markdown("<h4 style='text-align: center; color: grey;font-size:72px'></h4>", unsafe_allow_html=True)
+    # st.markdown("<h4 style='text-align: center; color: grey;font-size:12px'>Developed by ChunzPs</h4>", unsafe_allow_html=True)
 
+    footer.footer()

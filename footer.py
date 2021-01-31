@@ -18,7 +18,7 @@ def layout(*args):
     <style>
       # MainMenu {visibility: hidden;}
       footer {visibility: hidden;}
-     .stApp { bottom: 105px; }
+     .stApp { bottom: 135px; }
     </style>
     """
 
@@ -65,13 +65,13 @@ def layout(*args):
 
 def footer():
     myargs = [
-        "Made in ",
-        image('https://avatars3.githubusercontent.com/u/45109972?s=400&v=4',
-              width=px(25), height=px(25)),
-        " with ❤️ by ",
-        link("https://twitter.com/ChristianKlose3", "@ChristianKlose3"),
-        br(),
-        link("https://buymeacoffee.com/chrischross", image('https://i.imgur.com/thJhzOO.png')),
+        image('https://avatars3.githubusercontent.com/u/45109972?s=400&v=4',width=px(25), height=px(25)),
+        " Developed",
+        " by ",
+        link("https://www.github.com/chunmusic", "ChunzPs "),
+        image('https://avatars3.githubusercontent.com/u/45109972?s=400&v=4',width=px(25), height=px(25)),
+        br(),br(),
+        link("https://www.buymeacoffee.com/ChunzPs", image('https://i.imgur.com/thJhzOO.png')),
     ]
     layout(*myargs)
 
