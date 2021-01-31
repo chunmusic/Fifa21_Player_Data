@@ -32,11 +32,6 @@ def init_ui():
                 """
     st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
-    # st.set_page_config(page_title="FIFA Player",
-    #                 page_icon="🧊",
-    #                 layout="wide",
-    #                 initial_sidebar_state="expanded")
-
    
     st.markdown("<h1 style='text-align: center; color: black;font-size:72px'>FIFA 21 - Player Database</h1>", unsafe_allow_html=True)
     st.markdown("<h1 style='text-align: center; color: black;font-size:72px'></h1>", unsafe_allow_html=True)
@@ -299,11 +294,5 @@ if __name__ == "__main__":
     player_2_att,player_2_spd,player_2_pow,player_2_def,player_2_sta,player_2_tec = select_player_2(col4,col3,sub_col4,sub_col5)
 
     radar_chart(placeholder_1,placeholder_2,player_1_att,player_1_spd,player_1_pow,player_1_def,player_1_sta,player_1_tec,player_2_att,player_2_spd,player_2_pow,player_2_def,player_2_sta,player_2_tec)
-
-    # st.markdown("<h4 style='text-align: center; color: grey;font-size:72px'></h4>", unsafe_allow_html=True)
-    # st.markdown("<h4 style='text-align: center; color: grey;font-size:72px'></h4>", unsafe_allow_html=True)
-    # st.markdown("<h4 style='text-align: center; color: grey;font-size:72px'></h4>", unsafe_allow_html=True)
-    # st.markdown("<h4 style='text-align: center; color: grey;font-size:72px'></h4>", unsafe_allow_html=True)
-    # st.markdown("<h4 style='text-align: center; color: grey;font-size:12px'>Developed by ChunzPs</h4>", unsafe_allow_html=True)
 
     footer.footer()
