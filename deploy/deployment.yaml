@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: streamlit-deployment
+  namespace: web-app
+  labels:
+    app: streamlit
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: streamlit
+  template:
+    metadata:
+      labels:
+        app: streamlit
+    spec:
+      containers:
+        - name: streamlit
+          image: chunzps/fifa_2021:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8501
+          resources:
+            limits:
+              cpu: 1
+              memory: 800Mi
+            requests:
+              cpu: 100m
+              memory: 400Mi

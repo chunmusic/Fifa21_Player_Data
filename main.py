@@ -36,12 +36,12 @@ def init_ui():
     st.markdown("<h1 style='text-align: center; color: black;font-size:72px'>FIFA 21 - Player Database</h1>", unsafe_allow_html=True)
     st.markdown("<h1 style='text-align: center; color: black;font-size:72px'></h1>", unsafe_allow_html=True)
 
-    col1, col2, col3, col4 = st.beta_columns(4)
+    col1, col2, col3, col4 = st.columns(4)
 
     placeholder_1 = col2.empty()
     placeholder_2 = col3.empty()
 
-    sub_col1,sub_col2,sub_col3,sub_col4,sub_col5,sub_col6 = st.beta_columns((2,1,1,1,1,2))
+    sub_col1,sub_col2,sub_col3,sub_col4,sub_col5,sub_col6 = st.columns((2,1,1,1,1,2))
 
 
     return col1,col2,col3,col4,sub_col1,sub_col2,sub_col3,sub_col4,sub_col5,sub_col6,placeholder_1,placeholder_2

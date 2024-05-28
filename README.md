@@ -6,7 +6,7 @@
 
 - Dataset was provided by https://www.kaggle.com/justdhia/fifa-players
 
-- Please refer to the website https://share.streamlit.io/chunmusic/fifa21_player_data/main.py
+- Please refer to the website https://fifa.chunzps.com or https://share.streamlit.io/chunmusic/fifa21_player_data/main.py
 
 ## Preview
 
@@ -18,4 +18,3 @@
 ### 2nd Image
 
 ![Image2](https://raw.githubusercontent.com/chunmusic/Fifa21_Player_Data/master/images/image2.png)
-
