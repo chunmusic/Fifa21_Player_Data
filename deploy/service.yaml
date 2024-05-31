@@ -4,11 +4,10 @@ metadata:
   name: streamlit-service
   namespace: web-app
 spec:
-  type: LoadBalancer
   selector:
     app: streamlit
   ports:
-    - name: streamlit-port
-      protocol: TCP
+    - protocol: TCP
       port: 80
       targetPort: 8501
+  type: NodePort
